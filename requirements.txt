@@ -1,0 +1,6 @@
+langchain
+langchain_community
+google_generativeai
+streamlit
+pyttsx3
+pytesseract
