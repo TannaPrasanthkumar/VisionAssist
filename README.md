@@ -1,95 +1,50 @@
-VisionAssist 👁️
-VisionAssist is an AI-powered application designed to help visually impaired individuals by providing scene understanding, text extraction, and text-to-speech functionalities.
+# VisionAssist 👁️
 
-Features
-🔍 Describe Scene
-Leverages Google Gemini AI to provide:
+VisionAssist is an AI-powered application designed to assist visually impaired individuals by providing **scene understanding**, **text extraction**, and **text-to-speech** functionalities. The application aims to enhance accessibility and independence for visually impaired users through advanced AI technologies.
 
-A list of items detected in the image with their purpose.
-An overall description of the image.
-Suggestions for actions or precautions for visually impaired users.
-📝 Extract Text
-Extracts visible text from images using the Tesseract OCR engine.
+---
 
-🔊 Text-to-Speech
-Converts extracted text into speech using the pyttsx3 text-to-speech library.
+## 🌟 Features
 
-How It Works
-Upload an Image:
+### 🔍 **Describe Scene**
+Leverages **Google Gemini AI** to:
+- Detect and list items in an image with their purpose.
+- Provide an overall description of the image.
+- Suggest actions or precautions for visually impaired users.
 
-Drag and drop or browse an image file (JPG, JPEG, or PNG format).
-Choose a Feature:
+### 📝 **Extract Text**
+- Extracts visible text from images using the **Tesseract OCR** engine.
 
-Describe Scene: Uses Google Generative AI to analyze and describe the image.
-Extract Text: Extracts readable text from the image using OCR.
-Text-to-Speech: Reads the extracted text aloud.
-Output:
+### 🔊 **Text-to-Speech**
+- Converts extracted text into speech using the **pyttsx3** text-to-speech library.
 
-Displays the results, whether a scene description, extracted text, or audio playback.
-Installation
-Prerequisites
-Ensure the following tools are installed:
+---
 
-Python 3.8+
-Tesseract OCR (Download here)
-Steps
-Clone the Repository:
+## 💡 How It Works
 
-bash
-Copy code
-git clone https://github.com/YourUsername/VisionAssist.git  
-cd VisionAssist  
-Install Dependencies:
+1. **Upload an Image**:
+   - Drag and drop or browse an image file (supports JPG, JPEG, or PNG formats).
 
-bash
-Copy code
-pip install -r requirements.txt  
-Set Tesseract Path:
-Update the path to Tesseract in the code:
+2. **Choose a Feature**:
+   - **Describe Scene**: Uses **Google Generative AI** to analyze and describe the image.
+   - **Extract Text**: Extracts readable text from the image using OCR.
+   - **Text-to-Speech**: Reads the extracted text aloud.
 
-python
-Copy code
-pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'  
-Set Google Gemini API Key:
-Replace Your API Key in the code with your valid Google Gemini API key.
+3. **Output**:
+   - Displays results such as scene descriptions, extracted text, or audio playback for the user.
 
-Usage
-Run the application:
+---
 
-bash
-Copy code
-streamlit run app.py  
-Open the application in your browser:
+## 🛠️ Installation
 
-Navigate to http://localhost:8501.
-Interact with the application:
+### Prerequisites
+Make sure you have the following installed:
+- **Python 3.8+**
+- **Tesseract OCR** ([Download Tesseract OCR here](https://github.com/tesseract-ocr/tesseract))
 
-Upload an image and select a feature to process the image.
-Technologies Used
-Streamlit: Interactive web application framework.
-Tesseract OCR: Optical Character Recognition engine.
-Google Gemini API: Advanced AI model for scene understanding.
-Pyttsx3: Text-to-speech conversion library.
-Screenshots
-Main Interface:
+### Steps to Install
 
-Scene Description:
-
-Extracted Text:
-
-Credits
-Developed by MD Tahseen Equbal | Built with ❤️ using Streamlit
-
-License
-This project is licensed under the MIT License.
-
-Contributions
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
-
-Let me know if you'd like additional sections, edits, or customizations!
-
-
-
-
-
-
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/YourUsername/VisionAssist.git  
+   cd VisionAssist
